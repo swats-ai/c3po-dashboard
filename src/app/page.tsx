@@ -281,19 +281,19 @@ export default function Dashboard() {
             <div className="stats-grid">
               <div className="stat-box">
                 <div className="label">Active Ops</div>
-                <div className="value green">{summary.in_progress_tasks + (summary.open_tasks || 0)}</div>
+                <div className="value green">{summary.open_tasks || 0}</div>
               </div>
               <div className="stat-box">
                 <div className="label">Total Tasks</div>
                 <div className="value green">{summary.total_tasks}</div>
               </div>
               <div className="stat-box">
-                <div className="label">Completed</div>
-                <div className="value cyan">{summary.completed_tasks}</div>
+                <div className="label">On Going</div>
+                <div className="value cyan">{summary.ongoing_tasks || 0}</div>
               </div>
               <div className="stat-box">
-                <div className="label">Deployed</div>
-                <div className="value cyan">{summary.deployed_tasks}</div>
+                <div className="label">Completed</div>
+                <div className="value cyan">{summary.completed_tasks}</div>
               </div>
               <div className="stat-box">
                 <div className="label">Failed</div>

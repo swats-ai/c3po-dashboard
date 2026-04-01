@@ -17,9 +17,8 @@ export interface Task {
 export interface Summary {
   total_tasks: number;
   open_tasks: number;
-  in_progress_tasks: number;
+  ongoing_tasks: number;
   completed_tasks: number;
-  deployed_tasks: number;
   failed_tasks: number;
   escalated_tasks: number;
 }
